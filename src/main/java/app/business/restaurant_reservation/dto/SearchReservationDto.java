@@ -9,9 +9,9 @@ import java.time.Instant;
 public class SearchReservationDto {
     private Long id;
     private String customerGroupName;
-    private int numberOfGroup ;
-    private int tableNumber;
-    private int numberOfChairs;
+    private Long numberOfGroup ;
+    private Long tableNumber;
+    private Long numberOfChairs;
     private Instant fromTime;
     private Instant toTime;
     private String createdBy;

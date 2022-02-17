@@ -58,6 +58,30 @@ public class ReservationService {
     public Page<ListReservationDto> getAll(SearchReservationDto search, Pageable pageable){
         Specification<Reservation> spec = Specification.where((root, query, cb) -> {
             List<Predicate> predicates = new ArrayList<>();
+            if(search.getNumberOfGroup() != null){
+                predicates.add(cb.equal(root.get("numberOfGroup"), search.getNumberOfGroup()));
+            }
+            if(search.getCustomerGroupName() != null){
+                predicates.add(cb.equal(root.get("customerGroupName"), search.getCustomerGroupName()));
+            }
+            if(search.getTableNumber() != null){
+                predicates.add(cb.equal(root.get("tableNumber"), search.getTableNumber()));
+            }
+
+            return cb.and(predicates.toArray(new Predicate[] {}));
+        });
+        return reservationRepository.findAll(spec, pageable).map(element -> modelMapper.map(element, ListReservationDto.class));
+    }
+
+    public Page<ListReservationDto> getAllTable(SearchFoodTableSittingDto search, Pageable pageable){
+        Specification<Reservation> spec = Specification.where((root, query, cb) -> {
+            List<Predicate> predicates = new ArrayList<>();
+            if(search.getNumberOfChairs() != null){
+                predicates.add(cb.equal(root.get("numberOfChairs"), search.getNumberOfChairs()));
+            }
+            if(search.getTableNumber() != null){
+                predicates.add(cb.equal(root.get("tableNumber"), search.getTableNumber()));
+            }
 
 
             return cb.and(predicates.toArray(new Predicate[] {}));

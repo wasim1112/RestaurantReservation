@@ -1,9 +1,6 @@
 package app.business.restaurant_reservation.controller;
 
-import app.business.restaurant_reservation.dto.ListReservationDto;
-import app.business.restaurant_reservation.dto.SearchFoodTableAllowDto;
-import app.business.restaurant_reservation.dto.SearchReservationDto;
-import app.business.restaurant_reservation.dto.ViewReservationDto;
+import app.business.restaurant_reservation.dto.*;
 import app.business.restaurant_reservation.service.ReservationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -22,6 +19,11 @@ public class ReservationController {
     @GetMapping
     public Page<ListReservationDto> getAll(SearchReservationDto search, Pageable pageable){
         return reservationService.getAll(search, pageable);
+    }
+
+    @GetMapping("\table")
+    public Page<ListReservationDto> getAllTable(SearchFoodTableSittingDto search, Pageable pageable){
+        return reservationService.getAllTable(search, pageable);
     }
 
 //    @PreAuthorize("hasAuthority('RESERVATION:LIST')")

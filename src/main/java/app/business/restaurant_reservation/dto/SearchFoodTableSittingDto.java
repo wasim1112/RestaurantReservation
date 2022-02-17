@@ -6,6 +6,6 @@ import lombok.Data;
 @Data
 public class SearchFoodTableSittingDto {
     private Long id;
-    private int tableNumber = 0;
-    private int number_of_chairs = 0;
+    private Long tableNumber ;
+    private Long numberOfChairs ;
 }
