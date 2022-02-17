@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog/1.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog/1.9 http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-1.9.xsd">
+
+
+    <changeSet author="Wasim" id="privilege_group">
+        <sql>
+            create table privilege_group
+            (
+                pk_id   bigint identity not null,
+                name_ar nvarchar(255) not null,
+                name_en nvarchar(255) not null,
+                primary key (pk_id)
+            )
+
+            alter table privilege_group
+            add constraint uk_privilege_group_name_ar unique (name_ar)
+
+            alter table privilege_group
+            add constraint uk_privilege_group_name_en unique (name_en)
+        </sql>
+    </changeSet>
+
+    <changeSet author="Wasim" id="privilege">
+        <sql>
+            create table privilege
+            (
+                pk_id                 bigint identity not null,
+                code                  nvarchar(50) not null,
+                name_ar               nvarchar(50) not null,
+                name_en               nvarchar(50) not null,
+                fk_privilege_group_id bigint not null,
+                primary key (pk_id)
+            )
+
+            alter table privilege
+            add constraint uk_privilege_code unique (code)
+
+            alter table privilege
+            add constraint fk_privilege_privilege_group foreign key (fk_privilege_group_id) references privilege_group
+        </sql>
+    </changeSet>
+
+    <changeSet author="Wasim" id="role">
+        <sql>
+            create table role
+            (
+                pk_id            bigint identity not null,
+                name             nvarchar(50) not null,
+                created_at       datetime2 not null,
+                created_by       bigint,
+                last_modified_at datetime2,
+                last_modified_by bigint,
+                is_deleted       bit not null default 0,
+                primary key (pk_id)
+            )
+        </sql>
+    </changeSet>
+
+    <changeSet author="Wasim" id="role_privileges">
+        <sql>
+            create table role_privileges
+            (
+                fk_role_id      bigint not null,
+                fk_privilege_id bigint not null,
+                primary key (fk_role_id, fk_privilege_id)
+            )
+
+            alter table role_privileges add constraint fk_role_privileges_privilege foreign key (fk_privilege_id) references privilege
+            alter table role_privileges add constraint fk_role_privileges_role foreign key (fk_role_id) references role
+        </sql>
+    </changeSet>
+
+    <changeSet author="Wasim" id="users">
+        <sql>
+            create table users
+            (
+                pk_id                        BIGINT identity not null,
+                username                     NVARCHAR(50) not null,
+                email                        NVARCHAR(100),
+                mobile_number                NVARCHAR(20) not null,
+                password                     NVARCHAR(255),
+                created_at                   DATETIME2 not null,
+                created_by                   BIGINT,
+                last_modified_at             DATETIME2,
+                last_modified_by             BIGINT,
+                is_deleted                   BIT not null default 0,
+                is_locked                    BIT not null default 0,
+                primary key (pk_id)
+            )
+
+            create unique index ux_users_username
+            on users(username)
+            where is_deleted = 0
+
+        </sql>
+    </changeSet>
+
+    <changeSet author="Wasim" id="users_roles">
+        <sql>
+            create table users_roles
+            (
+                fk_user_id BIGINT not null,
+                fk_role_id BIGINT not null,
+                primary key (fk_user_id, fk_role_id)
+            )
+
+            alter table users_roles
+            add constraint fk_users_roles_role foreign key (fk_role_id) references
+            role
+
+            alter table users_roles
+            add constraint fk_users_roles_users foreign key (fk_user_id) references
+            users
+        </sql>
+    </changeSet>
+
+
+
+    <changeSet author="Wasim" id="iam">
+        <sql>
+            INSERT INTO privilege_group (name_en, name_ar) VALUES
+            ('System Management', N'إدارة النظام'),
+            ('Roles Management', N'إدارة الصلاحيات'),
+            ('Users Management', N'إدارة المستخدمين');
+
+            INSERT INTO privilege (code, name_en, name_ar, fk_privilege_group_id) VALUES
+            ('USER:SUPER', 'Users System Admin', N'مدير نظام المستخدمين', (SELECT pk_id FROM privilege_group WHERE name_en = 'Users Management')),
+            ('USER:CREATE', 'Create', N'إنشاء', (SELECT pk_id FROM privilege_group WHERE name_en = 'Users Management')),
+            ('USER:LIST', 'View List', N'عرض القائمة', (SELECT pk_id FROM privilege_group WHERE name_en = 'Users Management')),
+            ('USER:VIEW', 'View Details', N'عرض التفاصيل', (SELECT pk_id FROM privilege_group WHERE name_en = 'Users Management')),
+            ('USER:EDIT', 'Edit', N'تعديل', (SELECT pk_id FROM privilege_group WHERE name_en = 'Users Management')),
+            ('USER:LOCK', 'Lock', N'تعطيل', (SELECT pk_id FROM privilege_group WHERE name_en = 'Users Management')),
+            ('USER:DELETE', 'Delete', N'حذف', (SELECT pk_id FROM privilege_group WHERE name_en = 'Users Management')),
+            ('ROLE:CREATE', 'Create', N'إنشاء', (SELECT pk_id FROM privilege_group WHERE name_en = 'Roles Management')),
+            ('ROLE:LIST', 'View List', N'عرض القائمة', (SELECT pk_id FROM privilege_group WHERE name_en = 'Roles Management')),
+            ('ROLE:VIEW', 'View Details', N'عرض التفاصيل', (SELECT pk_id FROM privilege_group WHERE name_en = 'Roles Management')),
+            ('ROLE:EDIT', 'Edit', N'تعديل', (SELECT pk_id FROM privilege_group WHERE name_en = 'Roles Management')),
+            ('ROLE:LOCK', 'Lock', N'تعطيل', (SELECT pk_id FROM privilege_group WHERE name_en = 'Roles Management')),
+            ('ROLE:DELETE', 'Delete', N'حذف', (SELECT pk_id FROM privilege_group WHERE name_en = 'Roles Management'));
+
+            INSERT INTO users (username, email, mobile_number, password,created_by, created_at, last_modified_by, last_modified_at, is_deleted, is_locked)
+            VALUES ('admin', 'admin@test.com', '966566000000', '$2a$10$mJIqxovsGXyCh4aRfC7Sx.NJ0eamaWcWhGwNL1t17KbVgFOLJM6bq', null, '2022-03-24 00:00:00.000', null, '2022-03-24 00:00:00.000', 0, 0);
+
+            INSERT INTO role (name, created_by, created_at, last_modified_by, last_modified_at, is_deleted)
+            VALUES (N'مدير النظام', null, '2022-03-24 00:00:00.000', null, '2022-03-24 00:00:00.000', 0);
+
+            INSERT INTO role_privileges (fk_role_id, fk_privilege_id)
+            SELECT (SELECT pk_id FROM ROLE WHERE name = N'مدير النظام'), pk_id FROM privilege;
+
+            INSERT INTO users_roles (fk_user_id, fk_role_id)
+            VALUES ((SELECT pk_id FROM users WHERE username = 'admin'), (SELECT pk_id FROM ROLE WHERE name = N'مدير النظام'));
+        </sql>
+    </changeSet>
+
+
+
+</databaseChangeLog>

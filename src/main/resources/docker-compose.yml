@@ -1,0 +1,15 @@
+version: '2'
+services:
+  product-server:
+    container_name: reservation_restaurant
+    build:
+      context: docker-reservation_restaurant
+      dockerfile: Dockerfile
+    image: reservation_restaurant:latest
+    ports:
+      - 19999:9999
+    networks:
+      - spring-cloud-network
+networks:
+  spring-cloud-network:
+    driver: bridge

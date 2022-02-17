@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    url: jdbc:sqlserver://localhost\SQLEXPRESS19:1434;databaseName=test11
+    name:
+    username: sa
+    password: sa
+  read-only-datasource:
+    url: ${spring.datasource.url};ApplicationIntent=ReadOnly
+    name:
+    username: ${spring.datasource.username}
+    password: ${spring.datasource.password}
+  cache:
+    type: simple
+  redis:
+    password: mypassword # redis password
+    sentinel:
+      password:  # redis sentinel password
+      master: mymaster # master group name
+      nodes:
+        - 127.0.0.1:26381
+        - 127.0.0.1:26382
+        - 127.0.0.1:26383
+#logging:
+#  level:
+#    org.hibernate.SQL: DEBUG # logs the SQL statements
+#    org.hibernate.type: TRACE  # Logs the JDBC parameters passed to a query

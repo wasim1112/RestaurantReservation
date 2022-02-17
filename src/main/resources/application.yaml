@@ -1,0 +1,38 @@
+server:
+  port: 8099
+  error:
+    whitelabel:
+      enabled: false
+    include-stacktrace: never
+    include-exception: false
+  servlet:
+    session:
+      timeout: 600 # 10 minutes.
+
+spring:
+  profiles:
+    active: dev
+  liquibase:
+    change-log: classpath:/db/changelog.xml
+  messages:
+    basename: messages/messages
+    encoding: UTF-8
+  servlet:
+    multipart:
+      max-file-size: 20MB
+      max-request-size: 70MB
+  datasource:
+    hikari:
+      data-source-properties:
+        cachePrepStmts: true
+        prepStmtChacheSize: 250
+        prepStmtChacheSqlLimit: 2048
+        useServerPrepStmts: true
+      maximum-pool-size: 100
+      minimum-idle: 10
+      idle-timeout: 600000
+      connection-timeout: 30000
+  data:
+    redis:
+      repositories:
+        enabled: false
