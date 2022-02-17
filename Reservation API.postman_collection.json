@@ -1,0 +1,3678 @@
+{
+	"info": {
+		"_postman_id": "02cbc72d-f1db-4d58-ad51-f0f6fa2df0fc",
+		"name": "Reservation API",
+		"description": "A implementation of an API Gateway for Reservation DEVELOPER.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "api",
+			"item": [
+				{
+					"name": "reservation",
+					"item": [
+						{
+							"name": "getAll",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/reservation?createdAt=1945-10-18T22:45:37.700Z&createdBy=ad tempor ex&customerGroupName=ad tempor ex&fromTime=1945-10-18T22:45:37.700Z&id=-25177366&numberOfChairs=-25177366&numberOfGroup=-25177366&offset=-25177366&pageNumber=-25177366&pageSize=-25177366&paged=true&sort.sorted=true&sort.unsorted=true&tableNumber=-25177366&toTime=1945-10-18T22:45:37.700Z&unpaged=true",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"reservation"
+									],
+									"query": [
+										{
+											"key": "createdAt",
+											"value": "1945-10-18T22:45:37.700Z"
+										},
+										{
+											"key": "createdBy",
+											"value": "ad tempor ex"
+										},
+										{
+											"key": "customerGroupName",
+											"value": "ad tempor ex"
+										},
+										{
+											"key": "fromTime",
+											"value": "1945-10-18T22:45:37.700Z"
+										},
+										{
+											"key": "id",
+											"value": "-25177366"
+										},
+										{
+											"key": "numberOfChairs",
+											"value": "-25177366"
+										},
+										{
+											"key": "numberOfGroup",
+											"value": "-25177366"
+										},
+										{
+											"key": "offset",
+											"value": "-25177366"
+										},
+										{
+											"key": "pageNumber",
+											"value": "-25177366"
+										},
+										{
+											"key": "pageSize",
+											"value": "-25177366"
+										},
+										{
+											"key": "paged",
+											"value": "true"
+										},
+										{
+											"key": "sort.sorted",
+											"value": "true"
+										},
+										{
+											"key": "sort.unsorted",
+											"value": "true"
+										},
+										{
+											"key": "tableNumber",
+											"value": "-25177366"
+										},
+										{
+											"key": "toTime",
+											"value": "1945-10-18T22:45:37.700Z"
+										},
+										{
+											"key": "unpaged",
+											"value": "true"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/reservation?createdAt=1945-10-18T22:45:37.700Z&createdBy=ad tempor ex&customerGroupName=ad tempor ex&fromTime=1945-10-18T22:45:37.700Z&id=-25177366&numberOfChairs=-25177366&numberOfGroup=-25177366&offset=-25177366&pageNumber=-25177366&pageSize=-25177366&paged=true&sort.sorted=true&sort.unsorted=true&tableNumber=-25177366&toTime=1945-10-18T22:45:37.700Z&unpaged=true",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"reservation"
+											],
+											"query": [
+												{
+													"key": "createdAt",
+													"value": "1945-10-18T22:45:37.700Z"
+												},
+												{
+													"key": "createdBy",
+													"value": "ad tempor ex"
+												},
+												{
+													"key": "customerGroupName",
+													"value": "ad tempor ex"
+												},
+												{
+													"key": "fromTime",
+													"value": "1945-10-18T22:45:37.700Z"
+												},
+												{
+													"key": "id",
+													"value": "-25177366"
+												},
+												{
+													"key": "numberOfChairs",
+													"value": "-25177366"
+												},
+												{
+													"key": "numberOfGroup",
+													"value": "-25177366"
+												},
+												{
+													"key": "offset",
+													"value": "-25177366"
+												},
+												{
+													"key": "pageNumber",
+													"value": "-25177366"
+												},
+												{
+													"key": "pageSize",
+													"value": "-25177366"
+												},
+												{
+													"key": "paged",
+													"value": "true"
+												},
+												{
+													"key": "sort.sorted",
+													"value": "true"
+												},
+												{
+													"key": "sort.unsorted",
+													"value": "true"
+												},
+												{
+													"key": "tableNumber",
+													"value": "-25177366"
+												},
+												{
+													"key": "toTime",
+													"value": "1945-10-18T22:45:37.700Z"
+												},
+												{
+													"key": "unpaged",
+													"value": "true"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Unauthorized",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/reservation?createdAt=1945-10-18T22:45:37.700Z&createdBy=ad tempor ex&customerGroupName=ad tempor ex&fromTime=1945-10-18T22:45:37.700Z&id=-25177366&numberOfChairs=-25177366&numberOfGroup=-25177366&offset=-25177366&pageNumber=-25177366&pageSize=-25177366&paged=true&sort.sorted=true&sort.unsorted=true&tableNumber=-25177366&toTime=1945-10-18T22:45:37.700Z&unpaged=true",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"reservation"
+											],
+											"query": [
+												{
+													"key": "createdAt",
+													"value": "1945-10-18T22:45:37.700Z"
+												},
+												{
+													"key": "createdBy",
+													"value": "ad tempor ex"
+												},
+												{
+													"key": "customerGroupName",
+													"value": "ad tempor ex"
+												},
+												{
+													"key": "fromTime",
+													"value": "1945-10-18T22:45:37.700Z"
+												},
+												{
+													"key": "id",
+													"value": "-25177366"
+												},
+												{
+													"key": "numberOfChairs",
+													"value": "-25177366"
+												},
+												{
+													"key": "numberOfGroup",
+													"value": "-25177366"
+												},
+												{
+													"key": "offset",
+													"value": "-25177366"
+												},
+												{
+													"key": "pageNumber",
+													"value": "-25177366"
+												},
+												{
+													"key": "pageSize",
+													"value": "-25177366"
+												},
+												{
+													"key": "paged",
+													"value": "true"
+												},
+												{
+													"key": "sort.sorted",
+													"value": "true"
+												},
+												{
+													"key": "sort.unsorted",
+													"value": "true"
+												},
+												{
+													"key": "tableNumber",
+													"value": "-25177366"
+												},
+												{
+													"key": "toTime",
+													"value": "1945-10-18T22:45:37.700Z"
+												},
+												{
+													"key": "unpaged",
+													"value": "true"
+												}
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Forbidden",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/reservation?createdAt=1945-10-18T22:45:37.700Z&createdBy=ad tempor ex&customerGroupName=ad tempor ex&fromTime=1945-10-18T22:45:37.700Z&id=-25177366&numberOfChairs=-25177366&numberOfGroup=-25177366&offset=-25177366&pageNumber=-25177366&pageSize=-25177366&paged=true&sort.sorted=true&sort.unsorted=true&tableNumber=-25177366&toTime=1945-10-18T22:45:37.700Z&unpaged=true",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"reservation"
+											],
+											"query": [
+												{
+													"key": "createdAt",
+													"value": "1945-10-18T22:45:37.700Z"
+												},
+												{
+													"key": "createdBy",
+													"value": "ad tempor ex"
+												},
+												{
+													"key": "customerGroupName",
+													"value": "ad tempor ex"
+												},
+												{
+													"key": "fromTime",
+													"value": "1945-10-18T22:45:37.700Z"
+												},
+												{
+													"key": "id",
+													"value": "-25177366"
+												},
+												{
+													"key": "numberOfChairs",
+													"value": "-25177366"
+												},
+												{
+													"key": "numberOfGroup",
+													"value": "-25177366"
+												},
+												{
+													"key": "offset",
+													"value": "-25177366"
+												},
+												{
+													"key": "pageNumber",
+													"value": "-25177366"
+												},
+												{
+													"key": "pageSize",
+													"value": "-25177366"
+												},
+												{
+													"key": "paged",
+													"value": "true"
+												},
+												{
+													"key": "sort.sorted",
+													"value": "true"
+												},
+												{
+													"key": "sort.unsorted",
+													"value": "true"
+												},
+												{
+													"key": "tableNumber",
+													"value": "-25177366"
+												},
+												{
+													"key": "toTime",
+													"value": "1945-10-18T22:45:37.700Z"
+												},
+												{
+													"key": "unpaged",
+													"value": "true"
+												}
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/reservation?createdAt=1945-10-18T22:45:37.700Z&createdBy=ad tempor ex&customerGroupName=ad tempor ex&fromTime=1945-10-18T22:45:37.700Z&id=-25177366&numberOfChairs=-25177366&numberOfGroup=-25177366&offset=-25177366&pageNumber=-25177366&pageSize=-25177366&paged=true&sort.sorted=true&sort.unsorted=true&tableNumber=-25177366&toTime=1945-10-18T22:45:37.700Z&unpaged=true",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"reservation"
+											],
+											"query": [
+												{
+													"key": "createdAt",
+													"value": "1945-10-18T22:45:37.700Z"
+												},
+												{
+													"key": "createdBy",
+													"value": "ad tempor ex"
+												},
+												{
+													"key": "customerGroupName",
+													"value": "ad tempor ex"
+												},
+												{
+													"key": "fromTime",
+													"value": "1945-10-18T22:45:37.700Z"
+												},
+												{
+													"key": "id",
+													"value": "-25177366"
+												},
+												{
+													"key": "numberOfChairs",
+													"value": "-25177366"
+												},
+												{
+													"key": "numberOfGroup",
+													"value": "-25177366"
+												},
+												{
+													"key": "offset",
+													"value": "-25177366"
+												},
+												{
+													"key": "pageNumber",
+													"value": "-25177366"
+												},
+												{
+													"key": "pageSize",
+													"value": "-25177366"
+												},
+												{
+													"key": "paged",
+													"value": "true"
+												},
+												{
+													"key": "sort.sorted",
+													"value": "true"
+												},
+												{
+													"key": "sort.unsorted",
+													"value": "true"
+												},
+												{
+													"key": "tableNumber",
+													"value": "-25177366"
+												},
+												{
+													"key": "toTime",
+													"value": "1945-10-18T22:45:37.700Z"
+												},
+												{
+													"key": "unpaged",
+													"value": "true"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "tablesAvailableForReservation",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"customerGroupName\": \"Excepteur non laborum proident\",\n    \"fromTime\": \"1992-09-22T13:13:25.098Z\",\n    \"numberOfChairsNeeded\": 2,\n    \"toTime\": \"1972-10-13T18:40:09.280Z\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/reservation/reserve",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"reservation",
+										"reserve"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"customerGroupName\": \"Excepteur non laborum proident\",\n    \"fromTime\": \"1992-09-22T13:13:25.098Z\",\n    \"numberOfChairsNeeded\": -97178446,\n    \"toTime\": \"1972-10-13T18:40:09.280Z\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/reservation/reserve",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"reservation",
+												"reserve"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Created",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"customerGroupName\": \"Excepteur non laborum proident\",\n    \"fromTime\": \"1992-09-22T13:13:25.098Z\",\n    \"numberOfChairsNeeded\": -97178446,\n    \"toTime\": \"1972-10-13T18:40:09.280Z\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/reservation/reserve",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"reservation",
+												"reserve"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Unauthorized",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"customerGroupName\": \"Excepteur non laborum proident\",\n    \"fromTime\": \"1992-09-22T13:13:25.098Z\",\n    \"numberOfChairsNeeded\": -97178446,\n    \"toTime\": \"1972-10-13T18:40:09.280Z\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/reservation/reserve",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"reservation",
+												"reserve"
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Forbidden",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"customerGroupName\": \"Excepteur non laborum proident\",\n    \"fromTime\": \"1992-09-22T13:13:25.098Z\",\n    \"numberOfChairsNeeded\": -97178446,\n    \"toTime\": \"1972-10-13T18:40:09.280Z\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/reservation/reserve",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"reservation",
+												"reserve"
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"customerGroupName\": \"Excepteur non laborum proident\",\n    \"fromTime\": \"1992-09-22T13:13:25.098Z\",\n    \"numberOfChairsNeeded\": -97178446,\n    \"toTime\": \"1972-10-13T18:40:09.280Z\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/reservation/reserve",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"reservation",
+												"reserve"
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "getOne",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/reservation/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"reservation",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "-25177366",
+											"description": "(Required) id"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/reservation/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"reservation",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-25177366",
+													"description": "(Required) id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Unauthorized",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/reservation/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"reservation",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-25177366",
+													"description": "(Required) id"
+												}
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Forbidden",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/reservation/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"reservation",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-25177366",
+													"description": "(Required) id"
+												}
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/reservation/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"reservation",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-25177366",
+													"description": "(Required) id"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "getAllTable",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/reservation/\table?id=38556827&numberOfChairs=38556827&offset=38556827&pageNumber=38556827&pageSize=38556827&paged=true&sort.sorted=true&sort.unsorted=true&tableNumber=38556827&unpaged=true",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"reservation",
+										"\table"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "38556827"
+										},
+										{
+											"key": "numberOfChairs",
+											"value": "38556827"
+										},
+										{
+											"key": "offset",
+											"value": "38556827"
+										},
+										{
+											"key": "pageNumber",
+											"value": "38556827"
+										},
+										{
+											"key": "pageSize",
+											"value": "38556827"
+										},
+										{
+											"key": "paged",
+											"value": "true"
+										},
+										{
+											"key": "sort.sorted",
+											"value": "true"
+										},
+										{
+											"key": "sort.unsorted",
+											"value": "true"
+										},
+										{
+											"key": "tableNumber",
+											"value": "38556827"
+										},
+										{
+											"key": "unpaged",
+											"value": "true"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/reservation/\table?id=38556827&numberOfChairs=38556827&offset=38556827&pageNumber=38556827&pageSize=38556827&paged=true&sort.sorted=true&sort.unsorted=true&tableNumber=38556827&unpaged=true",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"reservation",
+												"\table"
+											],
+											"query": [
+												{
+													"key": "id",
+													"value": "38556827"
+												},
+												{
+													"key": "numberOfChairs",
+													"value": "38556827"
+												},
+												{
+													"key": "offset",
+													"value": "38556827"
+												},
+												{
+													"key": "pageNumber",
+													"value": "38556827"
+												},
+												{
+													"key": "pageSize",
+													"value": "38556827"
+												},
+												{
+													"key": "paged",
+													"value": "true"
+												},
+												{
+													"key": "sort.sorted",
+													"value": "true"
+												},
+												{
+													"key": "sort.unsorted",
+													"value": "true"
+												},
+												{
+													"key": "tableNumber",
+													"value": "38556827"
+												},
+												{
+													"key": "unpaged",
+													"value": "true"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Unauthorized",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/reservation/\table?id=38556827&numberOfChairs=38556827&offset=38556827&pageNumber=38556827&pageSize=38556827&paged=true&sort.sorted=true&sort.unsorted=true&tableNumber=38556827&unpaged=true",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"reservation",
+												"\table"
+											],
+											"query": [
+												{
+													"key": "id",
+													"value": "38556827"
+												},
+												{
+													"key": "numberOfChairs",
+													"value": "38556827"
+												},
+												{
+													"key": "offset",
+													"value": "38556827"
+												},
+												{
+													"key": "pageNumber",
+													"value": "38556827"
+												},
+												{
+													"key": "pageSize",
+													"value": "38556827"
+												},
+												{
+													"key": "paged",
+													"value": "true"
+												},
+												{
+													"key": "sort.sorted",
+													"value": "true"
+												},
+												{
+													"key": "sort.unsorted",
+													"value": "true"
+												},
+												{
+													"key": "tableNumber",
+													"value": "38556827"
+												},
+												{
+													"key": "unpaged",
+													"value": "true"
+												}
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Forbidden",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/reservation/\table?id=38556827&numberOfChairs=38556827&offset=38556827&pageNumber=38556827&pageSize=38556827&paged=true&sort.sorted=true&sort.unsorted=true&tableNumber=38556827&unpaged=true",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"reservation",
+												"\table"
+											],
+											"query": [
+												{
+													"key": "id",
+													"value": "38556827"
+												},
+												{
+													"key": "numberOfChairs",
+													"value": "38556827"
+												},
+												{
+													"key": "offset",
+													"value": "38556827"
+												},
+												{
+													"key": "pageNumber",
+													"value": "38556827"
+												},
+												{
+													"key": "pageSize",
+													"value": "38556827"
+												},
+												{
+													"key": "paged",
+													"value": "true"
+												},
+												{
+													"key": "sort.sorted",
+													"value": "true"
+												},
+												{
+													"key": "sort.unsorted",
+													"value": "true"
+												},
+												{
+													"key": "tableNumber",
+													"value": "38556827"
+												},
+												{
+													"key": "unpaged",
+													"value": "true"
+												}
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/reservation/\table?id=38556827&numberOfChairs=38556827&offset=38556827&pageNumber=38556827&pageSize=38556827&paged=true&sort.sorted=true&sort.unsorted=true&tableNumber=38556827&unpaged=true",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"reservation",
+												"\table"
+											],
+											"query": [
+												{
+													"key": "id",
+													"value": "38556827"
+												},
+												{
+													"key": "numberOfChairs",
+													"value": "38556827"
+												},
+												{
+													"key": "offset",
+													"value": "38556827"
+												},
+												{
+													"key": "pageNumber",
+													"value": "38556827"
+												},
+												{
+													"key": "pageSize",
+													"value": "38556827"
+												},
+												{
+													"key": "paged",
+													"value": "true"
+												},
+												{
+													"key": "sort.sorted",
+													"value": "true"
+												},
+												{
+													"key": "sort.unsorted",
+													"value": "true"
+												},
+												{
+													"key": "tableNumber",
+													"value": "38556827"
+												},
+												{
+													"key": "unpaged",
+													"value": "true"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "role",
+					"item": [
+						{
+							"name": "{id}",
+							"item": [
+								{
+									"name": "get",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/role/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"role",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-25177366",
+													"description": "(Required) id"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/role/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"role",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id",
+															"value": "-25177366",
+															"description": "(Required) id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "*/*"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Unauthorized",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/role/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"role",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id",
+															"value": "-25177366",
+															"description": "(Required) id"
+														}
+													]
+												}
+											},
+											"status": "Unauthorized",
+											"code": 401,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Forbidden",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/role/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"role",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id",
+															"value": "-25177366",
+															"description": "(Required) id"
+														}
+													]
+												}
+											},
+											"status": "Forbidden",
+											"code": 403,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Not Found",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/role/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"role",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id",
+															"value": "-25177366",
+															"description": "(Required) id"
+														}
+													]
+												}
+											},
+											"status": "Not Found",
+											"code": 404,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "update",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"name\": \"nisi exercitation\",\n    \"privilegesIds\": [\n        66471298,\n        -68571583\n    ]\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/role/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"role",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-25177366",
+													"description": "(Required) id"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/role/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"role",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id",
+															"value": "-25177366",
+															"description": "(Required) id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Created",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/role/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"role",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id",
+															"value": "-25177366",
+															"description": "(Required) id"
+														}
+													]
+												}
+											},
+											"status": "Created",
+											"code": 201,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Unauthorized",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/role/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"role",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id",
+															"value": "-25177366",
+															"description": "(Required) id"
+														}
+													]
+												}
+											},
+											"status": "Unauthorized",
+											"code": 401,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Forbidden",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/role/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"role",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id",
+															"value": "-25177366",
+															"description": "(Required) id"
+														}
+													]
+												}
+											},
+											"status": "Forbidden",
+											"code": 403,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Not Found",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/role/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"role",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id",
+															"value": "-25177366",
+															"description": "(Required) id"
+														}
+													]
+												}
+											},
+											"status": "Not Found",
+											"code": 404,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "getAll",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/role?offset=-25177366&pageNumber=-25177366&pageSize=-25177366&paged=true&sort.sorted=true&sort.unsorted=true&unpaged=true",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"role"
+									],
+									"query": [
+										{
+											"key": "offset",
+											"value": "-25177366"
+										},
+										{
+											"key": "pageNumber",
+											"value": "-25177366"
+										},
+										{
+											"key": "pageSize",
+											"value": "-25177366"
+										},
+										{
+											"key": "paged",
+											"value": "true"
+										},
+										{
+											"key": "sort.sorted",
+											"value": "true"
+										},
+										{
+											"key": "sort.unsorted",
+											"value": "true"
+										},
+										{
+											"key": "unpaged",
+											"value": "true"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/role?offset=-25177366&pageNumber=-25177366&pageSize=-25177366&paged=true&sort.sorted=true&sort.unsorted=true&unpaged=true",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"role"
+											],
+											"query": [
+												{
+													"key": "offset",
+													"value": "-25177366"
+												},
+												{
+													"key": "pageNumber",
+													"value": "-25177366"
+												},
+												{
+													"key": "pageSize",
+													"value": "-25177366"
+												},
+												{
+													"key": "paged",
+													"value": "true"
+												},
+												{
+													"key": "sort.sorted",
+													"value": "true"
+												},
+												{
+													"key": "sort.unsorted",
+													"value": "true"
+												},
+												{
+													"key": "unpaged",
+													"value": "true"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Unauthorized",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/role?offset=-25177366&pageNumber=-25177366&pageSize=-25177366&paged=true&sort.sorted=true&sort.unsorted=true&unpaged=true",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"role"
+											],
+											"query": [
+												{
+													"key": "offset",
+													"value": "-25177366"
+												},
+												{
+													"key": "pageNumber",
+													"value": "-25177366"
+												},
+												{
+													"key": "pageSize",
+													"value": "-25177366"
+												},
+												{
+													"key": "paged",
+													"value": "true"
+												},
+												{
+													"key": "sort.sorted",
+													"value": "true"
+												},
+												{
+													"key": "sort.unsorted",
+													"value": "true"
+												},
+												{
+													"key": "unpaged",
+													"value": "true"
+												}
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Forbidden",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/role?offset=-25177366&pageNumber=-25177366&pageSize=-25177366&paged=true&sort.sorted=true&sort.unsorted=true&unpaged=true",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"role"
+											],
+											"query": [
+												{
+													"key": "offset",
+													"value": "-25177366"
+												},
+												{
+													"key": "pageNumber",
+													"value": "-25177366"
+												},
+												{
+													"key": "pageSize",
+													"value": "-25177366"
+												},
+												{
+													"key": "paged",
+													"value": "true"
+												},
+												{
+													"key": "sort.sorted",
+													"value": "true"
+												},
+												{
+													"key": "sort.unsorted",
+													"value": "true"
+												},
+												{
+													"key": "unpaged",
+													"value": "true"
+												}
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/role?offset=-25177366&pageNumber=-25177366&pageSize=-25177366&paged=true&sort.sorted=true&sort.unsorted=true&unpaged=true",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"role"
+											],
+											"query": [
+												{
+													"key": "offset",
+													"value": "-25177366"
+												},
+												{
+													"key": "pageNumber",
+													"value": "-25177366"
+												},
+												{
+													"key": "pageSize",
+													"value": "-25177366"
+												},
+												{
+													"key": "paged",
+													"value": "true"
+												},
+												{
+													"key": "sort.sorted",
+													"value": "true"
+												},
+												{
+													"key": "sort.unsorted",
+													"value": "true"
+												},
+												{
+													"key": "unpaged",
+													"value": "true"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "create",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"in eu\",\n    \"privilegesIds\": [\n        -6011241,\n        -22776408\n    ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/role",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"role"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/role",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"role"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Created",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/role",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"role"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Unauthorized",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/role",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"role"
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Forbidden",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/role",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"role"
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/role",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"role"
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "delete",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/role/delete/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"role",
+										"delete",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "-25177366",
+											"description": "(Required) id"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/role/delete/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"role",
+												"delete",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-25177366",
+													"description": "(Required) id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Created",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/role/delete/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"role",
+												"delete",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-25177366",
+													"description": "(Required) id"
+												}
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Unauthorized",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/role/delete/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"role",
+												"delete",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-25177366",
+													"description": "(Required) id"
+												}
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Forbidden",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/role/delete/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"role",
+												"delete",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-25177366",
+													"description": "(Required) id"
+												}
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/role/delete/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"role",
+												"delete",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-25177366",
+													"description": "(Required) id"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "lock",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/role/lock/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"role",
+										"lock",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "-25177366",
+											"description": "(Required) id"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/role/lock/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"role",
+												"lock",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-25177366",
+													"description": "(Required) id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Created",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/role/lock/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"role",
+												"lock",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-25177366",
+													"description": "(Required) id"
+												}
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Unauthorized",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/role/lock/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"role",
+												"lock",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-25177366",
+													"description": "(Required) id"
+												}
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Forbidden",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/role/lock/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"role",
+												"lock",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-25177366",
+													"description": "(Required) id"
+												}
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/role/lock/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"role",
+												"lock",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-25177366",
+													"description": "(Required) id"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "getPrivilegesPool",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/role/privilegesPool/:userId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"role",
+										"privilegesPool",
+										":userId"
+									],
+									"variable": [
+										{
+											"key": "userId",
+											"value": "-25177366",
+											"description": "(Required) userId"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/role/privilegesPool/:userId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"role",
+												"privilegesPool",
+												":userId"
+											],
+											"variable": [
+												{
+													"key": "userId",
+													"value": "-25177366",
+													"description": "(Required) userId"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Unauthorized",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/role/privilegesPool/:userId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"role",
+												"privilegesPool",
+												":userId"
+											],
+											"variable": [
+												{
+													"key": "userId",
+													"value": "-25177366",
+													"description": "(Required) userId"
+												}
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Forbidden",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/role/privilegesPool/:userId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"role",
+												"privilegesPool",
+												":userId"
+											],
+											"variable": [
+												{
+													"key": "userId",
+													"value": "-25177366",
+													"description": "(Required) userId"
+												}
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/role/privilegesPool/:userId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"role",
+												"privilegesPool",
+												":userId"
+											],
+											"variable": [
+												{
+													"key": "userId",
+													"value": "-25177366",
+													"description": "(Required) userId"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "getRolesPool",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/role/rolesPool/:userId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"role",
+										"rolesPool",
+										":userId"
+									],
+									"variable": [
+										{
+											"key": "userId",
+											"value": "-25177366",
+											"description": "(Required) userId"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/role/rolesPool/:userId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"role",
+												"rolesPool",
+												":userId"
+											],
+											"variable": [
+												{
+													"key": "userId",
+													"value": "-25177366",
+													"description": "(Required) userId"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Unauthorized",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/role/rolesPool/:userId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"role",
+												"rolesPool",
+												":userId"
+											],
+											"variable": [
+												{
+													"key": "userId",
+													"value": "-25177366",
+													"description": "(Required) userId"
+												}
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Forbidden",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/role/rolesPool/:userId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"role",
+												"rolesPool",
+												":userId"
+											],
+											"variable": [
+												{
+													"key": "userId",
+													"value": "-25177366",
+													"description": "(Required) userId"
+												}
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/role/rolesPool/:userId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"role",
+												"rolesPool",
+												":userId"
+											],
+											"variable": [
+												{
+													"key": "userId",
+													"value": "-25177366",
+													"description": "(Required) userId"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "user",
+					"item": [
+						{
+							"name": "getAll",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/user?email=ad tempor ex&idNumber=ad tempor ex&managerUsername=ad tempor ex&mobileNumber=ad tempor ex&nationalityCode=ad tempor ex&offset=-25177366&pageNumber=-25177366&pageSize=-25177366&paged=true&sort.sorted=true&sort.unsorted=true&unpaged=true&username=ad tempor ex",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"user"
+									],
+									"query": [
+										{
+											"key": "email",
+											"value": "ad tempor ex"
+										},
+										{
+											"key": "idNumber",
+											"value": "ad tempor ex"
+										},
+										{
+											"key": "managerUsername",
+											"value": "ad tempor ex"
+										},
+										{
+											"key": "mobileNumber",
+											"value": "ad tempor ex"
+										},
+										{
+											"key": "nationalityCode",
+											"value": "ad tempor ex"
+										},
+										{
+											"key": "offset",
+											"value": "-25177366"
+										},
+										{
+											"key": "pageNumber",
+											"value": "-25177366"
+										},
+										{
+											"key": "pageSize",
+											"value": "-25177366"
+										},
+										{
+											"key": "paged",
+											"value": "true"
+										},
+										{
+											"key": "sort.sorted",
+											"value": "true"
+										},
+										{
+											"key": "sort.unsorted",
+											"value": "true"
+										},
+										{
+											"key": "unpaged",
+											"value": "true"
+										},
+										{
+											"key": "username",
+											"value": "ad tempor ex"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/user?email=ad tempor ex&idNumber=ad tempor ex&managerUsername=ad tempor ex&mobileNumber=ad tempor ex&nationalityCode=ad tempor ex&offset=-25177366&pageNumber=-25177366&pageSize=-25177366&paged=true&sort.sorted=true&sort.unsorted=true&unpaged=true&username=ad tempor ex",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"user"
+											],
+											"query": [
+												{
+													"key": "email",
+													"value": "ad tempor ex"
+												},
+												{
+													"key": "idNumber",
+													"value": "ad tempor ex"
+												},
+												{
+													"key": "managerUsername",
+													"value": "ad tempor ex"
+												},
+												{
+													"key": "mobileNumber",
+													"value": "ad tempor ex"
+												},
+												{
+													"key": "nationalityCode",
+													"value": "ad tempor ex"
+												},
+												{
+													"key": "offset",
+													"value": "-25177366"
+												},
+												{
+													"key": "pageNumber",
+													"value": "-25177366"
+												},
+												{
+													"key": "pageSize",
+													"value": "-25177366"
+												},
+												{
+													"key": "paged",
+													"value": "true"
+												},
+												{
+													"key": "sort.sorted",
+													"value": "true"
+												},
+												{
+													"key": "sort.unsorted",
+													"value": "true"
+												},
+												{
+													"key": "unpaged",
+													"value": "true"
+												},
+												{
+													"key": "username",
+													"value": "ad tempor ex"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Unauthorized",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/user?email=ad tempor ex&idNumber=ad tempor ex&managerUsername=ad tempor ex&mobileNumber=ad tempor ex&nationalityCode=ad tempor ex&offset=-25177366&pageNumber=-25177366&pageSize=-25177366&paged=true&sort.sorted=true&sort.unsorted=true&unpaged=true&username=ad tempor ex",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"user"
+											],
+											"query": [
+												{
+													"key": "email",
+													"value": "ad tempor ex"
+												},
+												{
+													"key": "idNumber",
+													"value": "ad tempor ex"
+												},
+												{
+													"key": "managerUsername",
+													"value": "ad tempor ex"
+												},
+												{
+													"key": "mobileNumber",
+													"value": "ad tempor ex"
+												},
+												{
+													"key": "nationalityCode",
+													"value": "ad tempor ex"
+												},
+												{
+													"key": "offset",
+													"value": "-25177366"
+												},
+												{
+													"key": "pageNumber",
+													"value": "-25177366"
+												},
+												{
+													"key": "pageSize",
+													"value": "-25177366"
+												},
+												{
+													"key": "paged",
+													"value": "true"
+												},
+												{
+													"key": "sort.sorted",
+													"value": "true"
+												},
+												{
+													"key": "sort.unsorted",
+													"value": "true"
+												},
+												{
+													"key": "unpaged",
+													"value": "true"
+												},
+												{
+													"key": "username",
+													"value": "ad tempor ex"
+												}
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Forbidden",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/user?email=ad tempor ex&idNumber=ad tempor ex&managerUsername=ad tempor ex&mobileNumber=ad tempor ex&nationalityCode=ad tempor ex&offset=-25177366&pageNumber=-25177366&pageSize=-25177366&paged=true&sort.sorted=true&sort.unsorted=true&unpaged=true&username=ad tempor ex",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"user"
+											],
+											"query": [
+												{
+													"key": "email",
+													"value": "ad tempor ex"
+												},
+												{
+													"key": "idNumber",
+													"value": "ad tempor ex"
+												},
+												{
+													"key": "managerUsername",
+													"value": "ad tempor ex"
+												},
+												{
+													"key": "mobileNumber",
+													"value": "ad tempor ex"
+												},
+												{
+													"key": "nationalityCode",
+													"value": "ad tempor ex"
+												},
+												{
+													"key": "offset",
+													"value": "-25177366"
+												},
+												{
+													"key": "pageNumber",
+													"value": "-25177366"
+												},
+												{
+													"key": "pageSize",
+													"value": "-25177366"
+												},
+												{
+													"key": "paged",
+													"value": "true"
+												},
+												{
+													"key": "sort.sorted",
+													"value": "true"
+												},
+												{
+													"key": "sort.unsorted",
+													"value": "true"
+												},
+												{
+													"key": "unpaged",
+													"value": "true"
+												},
+												{
+													"key": "username",
+													"value": "ad tempor ex"
+												}
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/user?email=ad tempor ex&idNumber=ad tempor ex&managerUsername=ad tempor ex&mobileNumber=ad tempor ex&nationalityCode=ad tempor ex&offset=-25177366&pageNumber=-25177366&pageSize=-25177366&paged=true&sort.sorted=true&sort.unsorted=true&unpaged=true&username=ad tempor ex",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"user"
+											],
+											"query": [
+												{
+													"key": "email",
+													"value": "ad tempor ex"
+												},
+												{
+													"key": "idNumber",
+													"value": "ad tempor ex"
+												},
+												{
+													"key": "managerUsername",
+													"value": "ad tempor ex"
+												},
+												{
+													"key": "mobileNumber",
+													"value": "ad tempor ex"
+												},
+												{
+													"key": "nationalityCode",
+													"value": "ad tempor ex"
+												},
+												{
+													"key": "offset",
+													"value": "-25177366"
+												},
+												{
+													"key": "pageNumber",
+													"value": "-25177366"
+												},
+												{
+													"key": "pageSize",
+													"value": "-25177366"
+												},
+												{
+													"key": "paged",
+													"value": "true"
+												},
+												{
+													"key": "sort.sorted",
+													"value": "true"
+												},
+												{
+													"key": "sort.unsorted",
+													"value": "true"
+												},
+												{
+													"key": "unpaged",
+													"value": "true"
+												},
+												{
+													"key": "username",
+													"value": "ad tempor ex"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "create",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"aliqua ad\",\n    \"idNumber\": \"in\",\n    \"mobileNumber\": \"sunt velit reprehenderit Ut ut\",\n    \"rolesIds\": [\n        -15174203,\n        21195870\n    ],\n    \"username\": \"consectetu\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/user",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"user"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"email\": \"dolor eu aute dolore pariatur\",\n    \"idNumber\": \"sunt laboris pariatur\",\n    \"mobileNumber\": \"officia Excepteur sit\",\n    \"rolesIds\": [\n        -99989489,\n        -4249917\n    ],\n    \"username\": \"sunt qui in velit\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/user",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"user"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Created",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"email\": \"dolor eu aute dolore pariatur\",\n    \"idNumber\": \"sunt laboris pariatur\",\n    \"mobileNumber\": \"officia Excepteur sit\",\n    \"rolesIds\": [\n        -99989489,\n        -4249917\n    ],\n    \"username\": \"sunt qui in velit\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/user",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"user"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Unauthorized",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"email\": \"dolor eu aute dolore pariatur\",\n    \"idNumber\": \"sunt laboris pariatur\",\n    \"mobileNumber\": \"officia Excepteur sit\",\n    \"rolesIds\": [\n        -99989489,\n        -4249917\n    ],\n    \"username\": \"sunt qui in velit\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/user",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"user"
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Forbidden",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"email\": \"dolor eu aute dolore pariatur\",\n    \"idNumber\": \"sunt laboris pariatur\",\n    \"mobileNumber\": \"officia Excepteur sit\",\n    \"rolesIds\": [\n        -99989489,\n        -4249917\n    ],\n    \"username\": \"sunt qui in velit\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/user",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"user"
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"email\": \"dolor eu aute dolore pariatur\",\n    \"idNumber\": \"sunt laboris pariatur\",\n    \"mobileNumber\": \"officia Excepteur sit\",\n    \"rolesIds\": [\n        -99989489,\n        -4249917\n    ],\n    \"username\": \"sunt qui in velit\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/user",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"user"
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "getOne",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/user/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"user",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "-25177366",
+											"description": "(Required) id"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/user/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"user",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-25177366",
+													"description": "(Required) id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Unauthorized",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/user/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"user",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-25177366",
+													"description": "(Required) id"
+												}
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Forbidden",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/user/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"user",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-25177366",
+													"description": "(Required) id"
+												}
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/user/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"user",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-25177366",
+													"description": "(Required) id"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "//localhost:8099"
+		}
+	]
+}
